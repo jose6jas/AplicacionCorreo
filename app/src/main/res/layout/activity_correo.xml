@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jose6jas.aplicacioncorreo.Correo">
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar"></include>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_settings"
+        android:text="@string/tv_settings"
+        android:textSize="@dimen/tv_settings_size"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/miActionBar"
+        />
+
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_settings"
+        android:text="correo@correo.com"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/asunto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/correo"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:text="Asunto"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/asunto"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:text="Mensaje"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mensaje"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Enviar" />
+</RelativeLayout>

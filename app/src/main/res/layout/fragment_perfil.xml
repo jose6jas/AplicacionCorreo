@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.jose6jas.aplicacioncorreo.fragment.PerfilFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="166dp"
+        android:layout_height="154dp"
+        android:src="@drawable/mascota1"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10"
+        app:civ_shadow_color="#8BC34A"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/civImagen"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFotos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/civImagen"
+        >
+
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
